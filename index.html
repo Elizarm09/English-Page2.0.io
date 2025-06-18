@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome 👋</h1>
+        <p>Please, complete your information</p>
+
+        <form onsubmit="startSession(); return false;">
+            <label for="userName">Name</label>
+            <input type="text" id="userName" required>
+
+            <label for="userCourse">Grade</label>
+            <input type="text" id="userCourse" required>
+
+            <label for="userLevel">Level</label>
+            <select id="userLevel" required>
+                <option value="b1">B1 Level</option>
+                <option value="b1plus">B1+ Level</option>
+                <option value="b2">B2 Level</option>
+            </select>
+
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
